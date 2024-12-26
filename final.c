@@ -21,6 +21,7 @@ int main() {
         printf("5. Delete Item by Id\n");
         printf("6. Calculate Total Value\n");
         printf("7. Exit\n");
+printf("____________________________________________________________________________\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
 

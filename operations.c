@@ -11,7 +11,7 @@ void initInventory(Inventory *inventory) {
     inventory->items = (Item *)malloc(sizeof(Item) * inventory->capacity);
     if (inventory->items == NULL) {
         printf("Memory allocation failed!\n");
-        return 0;
+        exit(1);
     }
 }
 
@@ -21,7 +21,7 @@ void resizeInventory(Inventory *inventory) {
     inventory->items = (Item *)realloc(inventory->items, sizeof(Item) * inventory->capacity);
     if (inventory->items == NULL) {
         printf("Memory allocation failed during resize!\n");
-        return 0;
+        exit(1);
     }
 }
 
